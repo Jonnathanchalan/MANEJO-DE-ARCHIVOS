@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Byron
+ * @author jonnathan
  */
 public class Archivos extends javax.swing.JFrame {
 
@@ -389,14 +389,14 @@ public class Archivos extends javax.swing.JFrame {
             archivo=lstOculto.getSelectedValue();
         }else{
             isValid=true;
-            JOptionPane.showMessageDialog(this, "No a seleccionado ningun archivo");
+            JOptionPane.showMessageDialog(this, "Noselecciono ningun archivo");
         }
         
         String rutaArchivo=txtRuta.getText().trim()+"\\"+archivo;
        
         
         if(isValid==false){
-        int r=JOptionPane.showConfirmDialog(this, "Seguro que desea eliminar "+archivo);
+        int r=JOptionPane.showConfirmDialog(this, "Confirme eliminar "+archivo);
         
         if(r==0){
             eliminar(rutaArchivo);
